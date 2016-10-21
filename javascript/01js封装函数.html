@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript封装函数</title>
+    <style>
+        #demo {
+            width: 200px;
+            height: 100px;
+            background-color: #6ac;
+        }
+        #test {
+            width: 200px;
+            height: 100px;
+            background-color: #bc1;
+        }
+        #one {
+            width: 200px;
+            height: 100px;
+            background-color: #3c3;
+        }
+    </style>
+</head>
+<body>
+<div id="demo"></div>
+<div id="test"></div>
+<div id="one"></div>
+</body>
+<script>
+    /*
+    * 函数封装
+    * */
+    //1.$函数封装 id
+    function $(id){
+        return document.getElementById(id);
+    }
+    //1.实例化:调用名字为 $ 的函数
+    //$("demo").style.backgroundColor = "pink";
+</script>
+</html>

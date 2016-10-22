@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查询中间</title>
+    <style>
+        #gxzj {
+            width: 195px;
+            height: 20px;
+            background-color: #4de;
+            display:none;/*默认div是隐藏*/
+        }
+        #mzj {
+            width: 195px;
+            height: 20px;
+            background-color: #fa1;
+            display:none;/*默认隐藏*/
+        }
+    </style>
+</head>
+<body>
+<input type="text" id="txt" value="请输入…"/><button id="btn">查询</button>
+<div id="gxzj"></div>
+<div id="mzj"></div>
+</body>
+<script>
+    /*
+    * 查询某人是否中奖if else
+    * 使用按钮变动是否隐藏
+    * */
+    //1.入口函数window.onload()
+    window.onload = function(){
+        function $(id) {
+            //封装函数名为$  的元素id
+            return document.getElementById(id);
+        }
+        //2.事件源：btn 3.事件：单击 4.事件处理：判断输入的人员是否存在
+        $("btn").onclick = function(){
+            if($("txt").value == "刘德华")
+            {
+                $("gxzj").style.display = "block";
+                $("gxzj").innerHTML="恭喜中奖啦^_^";//获取div标签里面的内容
+            }else{
+                $("mzj").style.display = "block";
+                $("mzj").innerHTML="没有中奖啦~_~";
+            }
+
+        }
+    }
+</script>
+</html>

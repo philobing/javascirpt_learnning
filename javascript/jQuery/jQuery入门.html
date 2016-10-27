@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery入门</title>
+    <script src="jquery-1.11.1.min.js"></script>
+    <style>
+        /*
+        ul{
+            list-style: none;
+        }
+        */
+    </style>
+</head>
+<body>
+<!-- ul>li{你的兄弟好多$}*5 -->
+<ul>
+    <li id="bo1">你的兄弟好多1</li>
+    <li class="cs">你的兄弟好多2</li>
+    <li id="bo3">你的兄弟好多3</li>
+    <li>你的兄弟好多4</li>
+    <li>你的兄弟好多5</li>
+</ul>
+</body>
+<script>
+    $(document).ready(function(){
+//        $("li").css("background-color","red");
+
+        $("ul").css({
+            "background-color": "#ca1",
+            "font-size": "20px",
+            "color": "#9e0",
+            "list-style":"none"
+         });
+    })
+</script>
+</html>
